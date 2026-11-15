@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="StudyMate student planner">
+  <title>StudyMate</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><span class="logo">S</span><strong>StudyMate</strong></div>
+    <span class="tag">YOUR STUDY SPACE</span>
+  </header>
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">STUDENT DASHBOARD</p>
+      <h1>Make today<br><span>count.</span></h1>
+      <p class="sub">A calmer way to organize your school life.</p>
+    </section>
+    <section class="stats">
+      <article class="stat"><span>Tasks left</span><strong id="taskCount">0</strong></article>
+      <article class="stat"><span>Quick notes</span><strong id="noteCount">0</strong></article>
+    </section>
+    <section class="panel">
+      <div class="section-head"><div><p class="eyebrow">STAY ON TRACK</p><h2>My tasks</h2></div></div>
+      <form id="taskForm" class="entry"><input id="taskInput" placeholder="Add a school task..." maxlength="100" required><button>Add</button></form>
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+    <section class="panel">
+      <div class="section-head"><div><p class="eyebrow">SAVE AN IDEA</p><h2>Quick notes</h2></div></div>
+      <textarea id="noteInput" placeholder="Write a reminder, idea, or class note..."></textarea>
+      <button id="saveNote" class="secondary">Save note</button>
+      <div id="notesList" class="notes-list"></div>
+    </section>
+    <footer>StudyMate · Built for your next big idea.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
